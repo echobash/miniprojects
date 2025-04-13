@@ -1,0 +1,53 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django migrations
+**/migrations/
+!**/migrations/__init__.py
+
+# SQLite database
+db.sqlite3
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+*.env
+
+# Django secret keys, config files
+*.local
+*.log
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Editor-specific
+.vscode/
+.idea/
+
+# Static and media files
+/static/
+/media/
+/node_modules/
+
+# Coverage and test output
+htmlcov/
+coverage.xml
+*.cover
+
+# Pytest cache
+.pytest_cache/
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
