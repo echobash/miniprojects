@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Visit Count Homepage</title>
+    <title>Visit Count</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f6f9fc, #e9eff5);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px 60px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .count {
+            color: #e63946;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
 </head>
 <body>
-    You visited this app <span style="color:red">{{count}}</span> time{{count|pluralize}}.
+    <div class="container">
+        <h1>You visited this app <span class="count">{{ count }}</span> time{{ count|pluralize }}.</h1>
+        <footer>&copy; {{ year }} Echobash</footer>
+    </div>
 </body>
 </html>
