@@ -1,52 +1,64 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Django migrations
-**/migrations/
-!**/migrations/__init__.py
+# Django migrations — ignore compiled files, but keep migration .py files
+**/migrations/__pycache__/
+**/migrations/*.py[cod]
 
 # SQLite database
 db.sqlite3
 
-# Virtual environment
+# Virtual environments
 venv/
 env/
 ENV/
 .venv/
-.env/
-*.env
 
-# Django secret keys, config files
+# Environment / secrets
+.env
+*.env
 *.local
+secrets.py
+
+# Logs
 *.log
 
-# OS/system files
+# OS / system junk
 .DS_Store
 Thumbs.db
 
-# Editor-specific
+# Editor / IDE folders
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 
-# Static and media files
-/static/
-/media/
-/node_modules/
+# Static and media files (optional if generated)
+staticfiles/
+static/
+media/
 
-# Coverage and test output
+# Node modules (for frontend use)
+node_modules/
+
+# Test / coverage
 htmlcov/
-coverage.xml
+.coverage
+.coverage.*
 *.cover
-
-# Pytest cache
 .pytest_cache/
+nosetests.xml
+coverage.xml
 
-# Build and distribution
+# Distribution / packaging
 build/
 dist/
 *.egg-info/
 .eggs/
+*.manifest
+*.spec
 
 # Jupyter notebooks
 .ipynb_checkpoints/
